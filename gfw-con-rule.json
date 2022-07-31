@@ -1,40 +1,62 @@
 [
-    {
-      "port": "0-65535",
-      "outboundTag": "proxy",
-      "domain": [
-        "curseforge.com",
-        "cloudflare.com",
-        "apkmirror.com",
-        "jetbrains.com",
-        "justhost.ru",
-        "apache.org",
-        "vultr.com",
-        "buyvm.com",
-        "mvnrepository.com",
-        "hub.docker.com",
-        "freenom.com",
-        "freenom.world",
-        "live.com",
-        "outlook.com",
-        "textnow.com",
-        "hcaptcha.com",
-        "xiaomi.eu",
-        "steam-chat.com"
-      ]
-    },
-    {
-      "outboundTag": "proxy",
-      "ip": [
-        "geoip:telegram"
-      ],
-      "domain": [
-        "geosite:gfw",
-        "geosite:greatfire"
-      ]
-    },
-    {
-      "port": "0-65535",
-      "outboundTag": "direct"
-    }
-  ]
+  {
+    "port": "0-65535",
+    "outboundTag": "proxy",
+    "domain": [
+      "curseforge.com",
+      "cloudflare.com",
+      "apkmirror.com",
+      "jetbrains.com",
+      "justhost.ru",
+      "apache.org",
+      "vultr.com",
+      "buyvm.com",
+      "mvnrepository.com",
+      "hub.docker.com",
+      "freenom.com",
+      "freenom.world",
+      "live.com",
+      "outlook.com",
+      "textnow.com",
+      "hcaptcha.com",
+      "xiaomi.eu",
+      "steam-chat.com",
+      "ggpht.com"
+    ]
+  },
+  {
+    "outboundTag": "direct",
+    "domain": [
+      "domain:example-example.com",
+      "domain:example-example2.com"
+    ],
+    "enabled": true
+  },
+  {
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all"
+    ],
+    "enabled": true
+  },
+  {
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:cn"
+    ],
+    "enabled": true
+  },
+  {
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private",
+      "geoip:cn"
+    ],
+    "enabled": true
+  },
+  {
+    "port": "0-65535",
+    "outboundTag": "proxy",
+    "enabled": true
+  }
+]
